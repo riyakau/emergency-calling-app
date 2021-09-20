@@ -1,0 +1,74 @@
+[debug] [2021-09-20T09:50:25.521Z] ----------------------------------------------------------------------
+[debug] [2021-09-20T09:50:25.523Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kaush\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-09-20T09:50:25.524Z] CLI Version:   9.18.0
+[debug] [2021-09-20T09:50:25.524Z] Platform:      win32
+[debug] [2021-09-20T09:50:25.524Z] Node Version:  v14.17.5
+[debug] [2021-09-20T09:50:25.525Z] Time:          Mon Sep 20 2021 15:20:25 GMT+0530 (India Standard Time)
+[debug] [2021-09-20T09:50:25.525Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-09-20T09:50:25.589Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-09-20T09:50:25.589Z] > authorizing via signed-in user (kaushik.riya24@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\kaush\Desktop\libraryapp
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using emergency-calling. 
+[debug] [2021-09-20T09:50:36.770Z] > refreshing access token with scopes: []
+[debug] [2021-09-20T09:50:36.771Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-09-20T09:50:37.351Z] <<< HTTP RESPONSE 200 {"date":"Mon, 20 Sep 2021 09:50:37 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-20T09:50:37.375Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/emergency-calling [none]
+[debug] [2021-09-20T09:50:38.087Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/emergency-calling 200
+[debug] [2021-09-20T09:50:38.088Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/emergency-calling {"projectId":"emergency-calling","projectNumber":"1027484182424","displayName":"emergency calling","name":"projects/emergency-calling","resources":{"hostingSite":"emergency-calling","realtimeDatabaseInstance":"emergency-calling-default-rtdb","storageBucket":"emergency-calling.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-09-20T09:50:50.461Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-09-20T09:50:50.802Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-09-20T09:50:50.803Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.0.2","browserURL":"https://www.gstatic.com/firebasejs/9.0.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.0.2/firebase.tgz"},"live":{"version":"9.0","browserURL":"https://www.gstatic.com/firebasejs/live/9.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.0/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.0.2/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.0.2/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.0.2/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.0.2/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.0.2/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.0.2/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.0.2/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.0.2/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.0.2/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.memory.js"}}
+[info] +  Wrote build/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\kaush\Desktop\libraryapp is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=721482798&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-09-20T09:50:54.924Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"39b8ba0a6aef1468094f","redirect_uri":"http://localhost:9005","state":"721482798"}
+[debug] [2021-09-20T09:50:55.525Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Mon, 20 Sep 2021 09:50:55 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"aa033af6fe5a85752c0ba9930a351d23\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src github.githubassets.com; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.githubassets.com github.com/socket-worker-0af8a29d.js gist.github.com/socket-worker-0af8a29d.js","x-github-request-id":"BAC1:2D9D:23C261:2E2C02:6148597F"}
+[debug] [2021-09-20T09:50:55.530Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-09-20T09:50:56.234Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-09-20T09:50:56.235Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"riyakau","id":72134103,"node_id":"MDQ6VXNlcjcyMTM0MTAz","avatar_url":"https://avatars.githubusercontent.com/u/72134103?v=4","gravatar_id":"","url":"https://api.github.com/users/riyakau","html_url":"https://github.com/riyakau","followers_url":"https://api.github.com/users/riyakau/followers","following_url":"https://api.github.com/users/riyakau/following{/other_user}","gists_url":"https://api.github.com/users/riyakau/gists{/gist_id}","starred_url":"https://api.github.com/users/riyakau/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/riyakau/subscriptions","organizations_url":"https://api.github.com/users/riyakau/orgs","repos_url":"https://api.github.com/users/riyakau/repos","events_url":"https://api.github.com/users/riyakau/events{/privacy}","received_events_url":"https://api.github.com/users/riyakau/received_events","type":"User","site_admin":false,"name":"Riya kaushik","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":91,"public_gists":0,"followers":0,"following":0,"created_at":"2020-09-30T10:27:16Z","updated_at":"2021-09-08T09:46:37Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":77028,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as riyakau 
+[info] 
+[debug] [2021-09-20T09:51:14.141Z] >>> [apiv2][query] GET https://api.github.com/repos/n/actions/secrets/public-key type=owner
+[debug] [2021-09-20T09:51:14.780Z] <<< [apiv2][status] GET https://api.github.com/repos/n/actions/secrets/public-key 404
+[debug] [2021-09-20T09:51:14.780Z] <<< [apiv2][body] GET https://api.github.com/repos/n/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-09-20T09:51:17.252Z] >>> [apiv2][query] GET https://api.github.com/repos/n/actions/secrets/public-key type=owner
+[debug] [2021-09-20T09:51:17.855Z] <<< [apiv2][status] GET https://api.github.com/repos/n/actions/secrets/public-key 404
+[debug] [2021-09-20T09:51:17.856Z] <<< [apiv2][body] GET https://api.github.com/repos/n/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
